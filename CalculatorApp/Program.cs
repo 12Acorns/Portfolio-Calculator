@@ -6,7 +6,7 @@ namespace CalculatorApp
 	{
 		static void Main(string[] args)
 		{
-			Chunkator _chunkator = new("1+1-1/2*4+1");
+			Chunkator _chunkator = new("11+1-1/2*4+1");
 			_chunkator.Chunkate();
 		}
 	}
