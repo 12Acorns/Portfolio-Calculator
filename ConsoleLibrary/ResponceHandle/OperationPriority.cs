@@ -1,31 +1,32 @@
-﻿using ConsoleLibrary.Chunking;
-using ConsoleLibrary.Operators;
+﻿using CalculatorLibrary.Chunking;
+using CalculatorLibrary.Operators;
 
-namespace ConsoleLibrary.ResponceHandle
+namespace CalculatorLibrary.ResponceHandle
 {
 	public partial class OperationPriority(ResponceChunk[] _chunks)
 	{
-		/*
-		 * if oper is > than oper2 we stick.
-		 * if oper is < than oper2 we switch.
-		 * if switch and then oper is equal to oper2 we stick.
-		*/ 
 		public ResponceChunk[] SortOperators()
 		{
-			ResponceChunk[] _sortedChunks = new ResponceChunk[_chunks.Length];
 			for (int i = 0; i < _chunks.Length; i++)
 			{
-				int _base = GetValue(_chunks[i]);
-				for (int j = 0; j < _chunks.Length; j++)
+				int _baseOperatorPriority = GetPriority(_chunks[i]);
+				for (int j = 0; j < _chunks.Length - i; j++)
 				{
-					int _current = GetValue(_chunks[j]);
-
-
+					int _index = i + j;
+					int _currentOperatorPriority = GetPriority(_chunks[_index]);
+					
+					if(_baseOperatorPriority < _currentOperatorPriority)
+					{
+						ResponceChunk _tempChunk = _chunks[i];
+						_chunks[i] = _chunks[_index];
+						_chunks[_index] = _tempChunk;
+						_baseOperatorPriority = GetPriority(_chunks[i]);
+					}
 				}
 			}
-			return _sortedChunks;
+			return _chunks;
 		}
-		private static int GetValue(ResponceChunk _chunk)
+		private static int GetPriority(ResponceChunk _chunk)
 		{
 			int _value = OrderOfOperation.
 				OperatorPriority[

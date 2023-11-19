@@ -1,4 +1,4 @@
-﻿namespace ConsoleLibrary.Safety
+﻿namespace CalculatorLibrary.Safety
 {
 	public enum TypeSafety
 	{

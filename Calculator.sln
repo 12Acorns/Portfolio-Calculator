@@ -5,9 +5,9 @@ VisualStudioVersion = 17.8.34309.116
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CalculatorApp", "CalculatorApp\CalculatorApp.csproj", "{3FACCF75-21FA-429F-84EE-54BDFE6462B1}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleLibrary", "ConsoleLibrary\ConsoleLibrary.csproj", "{BEFA38F2-9C67-4D46-9030-F8217D83383B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CalculatorLibrary", "ConsoleLibrary\CalculatorLibrary.csproj", "{BEFA38F2-9C67-4D46-9030-F8217D83383B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExtensionLibrary", "ExtensionLibrary\ExtensionLibrary.csproj", "{03B255BE-9497-469B-A7AD-DE3E9AC8C749}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExtensionLibrary", "ExtensionLibrary\ExtensionLibrary.csproj", "{03B255BE-9497-469B-A7AD-DE3E9AC8C749}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -1,9 +1,9 @@
-﻿using ConsoleLibrary.Operators;
+﻿using CalculatorLibrary.Operators;
 
-namespace ConsoleLibrary.Chunking
+namespace CalculatorLibrary.Chunking
 {
     public record ResponceChunk(
-		int _leftInput,
-		int _rightInput,
+		decimal _leftInput,
+		decimal _rightInput,
 		Operator _operator);
 }

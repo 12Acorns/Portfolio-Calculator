@@ -1,4 +1,4 @@
-﻿namespace ConsoleLibrary.Operators
+﻿namespace CalculatorLibrary.Operators
 {
 	public readonly struct Operator(OperatorType _type)
 	{

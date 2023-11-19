@@ -1,8 +1,8 @@
-﻿using ExtensionLibrary.Enumerations;
-using System.Text.RegularExpressions;
-using ConsoleLibrary.Operators;
+﻿using System.Text.RegularExpressions;
+using ExtensionLibrary.Enumerations;
+using CalculatorLibrary.Operators;
 
-namespace ConsoleLibrary.Chunking
+namespace CalculatorLibrary.Chunking
 {
     public partial class Chunkator(string _input)
     {

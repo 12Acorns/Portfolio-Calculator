@@ -1,4 +1,4 @@
-﻿namespace ConsoleLibrary.Operators
+﻿namespace CalculatorLibrary.Operators
 {
 	internal static class OperatorTypeCasting
 	{
